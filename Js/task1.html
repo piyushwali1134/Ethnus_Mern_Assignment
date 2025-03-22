@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse a Number</title>
+    <style>
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 24px;
+        }
+        span {
+            font-weight: bold;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Reverse a Number</h2>
+    <p>Original Number: <span id="originalNumber"></span></p>
+    <p>Reversed Number: <span id="reversedNumber"></span></p>
+
+    <script>
+        function reverseNumber(num) {
+            return parseInt(num.toString().split('').reverse().join(''));
+        }
+
+        // Example usage
+        let exampleNumber = 32243;
+        let reversedNum = reverseNumber(exampleNumber);
+
+        // Display values on the webpage
+        document.getElementById("originalNumber").textContent = exampleNumber;
+        document.getElementById("reversedNumber").textContent = reversedNum;
+    </script>
+
+</body>
+</html>

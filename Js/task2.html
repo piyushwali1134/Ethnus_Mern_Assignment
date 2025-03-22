@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabetize String</title>
+    <style>
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 24px;
+        }
+        span {
+            font-weight: bold;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Alphabetize a String</h2>
+    <p>Original String: <span id="originalString"></span></p>
+    <p>Alphabetized String: <span id="alphabetizedString"></span></p>
+
+    <script>
+        function alphabetizeString(str) {
+            return str.split('').sort().join('');
+        }
+
+        // Example usage
+        let exampleString = "webmaster";
+        let sortedString = alphabetizeString(exampleString);
+
+        // Display values on the webpage
+        document.getElementById("originalString").textContent = exampleString;
+        document.getElementById("alphabetizedString").textContent = sortedString;
+    </script>
+
+</body>
+</html>
